@@ -4,7 +4,8 @@
 > Основано на официальной [документации](https://github.com/PLCnext/SampleRuntime/blob/master/getting-started/Part-01/README.md).
 
 > [!TIP]
-> English version is [here](./readmeEN.md).
+> English version is [here](./readme.md).\
+> Беларускі варыянт знаходзіцца [тут](./readmeBY.md). 
 
 ## Использование командной строки (чистый **CMake**) ##
 
@@ -50,7 +51,7 @@ cmake --build --preset=build-windows-AXCF2152-2021.0.3.35554 --target install
 
 Таким образом, вы открыли проект на основе CMake. Установите автоматически предлагаемую конфигурацию и создайте приложение (нажмите **F7** , чтобы начать процесс сборки).
 
-## Использование другой IDE, которая поддерживает предустановки CMake##
+## Использование другой IDE, которая поддерживает предустановки CMake ##
 
 Откройте каталог `"HowTo build program Hello PLCnext\Hello-PLCnext"` в IDE.
 

@@ -1,17 +1,17 @@
-# How to use **valgrind** #
+# Як выкарыстоўваць **valgrind** #
 > [!TIP]
-> Беларускі варыянт знаходзіцца [тут](./readmeBY.md). 
-## 1. Building **valgrind** (on Linux) ##
+> English version is [here](./readme.md).
+## 1. Зборка **valgrind** (на Linux) ##
 
-> Based on the official [documentation](https://valgrind.org/downloads/repository.html).
+> Заснавана на афіцыйнай [дакументацыі](https://valgrind.org/downloads/repository.html).
 
-Clone **valgrind** source code repository:
+Выканайце кланаванне зыходнага кода **valgrind** з рэпазіторыя:
 
 ```sh
 git clone git://sourceware.org/git/valgrind.git
 ```
 
-Cloning should finish successfully:
+Кланаванне павінна завяршыцца паспяхова:
 ```sh
 Cloning into 'valgrind'...
 remote: Enumerating objects: 132463, done.
@@ -23,17 +23,17 @@ Resolving deltas: 100% (101212/101212), done.
 Updating files: 100% (6435/6435), done.
 ```
 
-Change current directory:
+Выканайце пераход да рабочага каталога:
 ```sh
 cd valgrind
 ```
 
-Run autoconf:
+Запусціце аўтаканфігурацыю:
 ```sh
 ./autogen.sh
 ```
 
-Autoconf should finish successfully:
+Аўтаканфігурацыя павінна завяршыцца паспяхова:
 ```sh
 running: aclocal
 running: autoheader
@@ -47,58 +47,59 @@ Makefile.vex.am: installing './depcomp'
 running: autoconf
 ```
 
-Setup environment (to be able to crosscompile):
+Наладзьце асяроддзе (для магчымасці кросскампіляцыі):
 ```sh
 source /opt/pxc/sdk/AXCF2152/2021.0/environment-setup-cortexa9t2hf-neon-pxc-linux-gnueabi
 ```
 
-where `/opt/pxc/sdk/AXCF2152/2021.0` - your sdk path.
+дзе `/opt/pxc/sdk/AXCF2152/2021.0` - шлях да вашага SDK.
 
-Configure:
+Канфігурацыя:
 ```sh
 ./configure --host=armv7-linux-gnueabi --prefix=/opt/valgrind
 ```
 
-Build:
+Зборка:
 ```sh
 make
 ```
 
-Create deploy directory and change permissions:
+Стварыць каталог для разгортвання і змяніць правы доступа:
 ```sh
 sudo mkdir /opt/valgrind
 sudo chmod 777 /opt/valgrind
 ```
 
-Install:
+Усталяванне
 ```sh
 sudo make install
 ```
-## 2. Deploying **valgrind** to a controller ##
+## 2. Разгортванне **valgrind** на кантролеры ##
 
-Copy directory `/opt/valgrind` to controller to the directory `/opt/valgrind`:
+Скапіруйце каталог `/opt/valgrind` на кантроллер па адрасе 
+`/opt/valgrind`:
 ```sh
 scp -r /opt/valgrind/ admin@x.x.x.x:/opt/
 ```
 
-## 3. Checking **valgrind** (on a controller) ##
+## 3. Праверка **valgrind** (на кантролеры) ##
 
-Check valgrind:
+Праверка valgrind:
 ```sh
 /opt/valgrind/bin/valgrind --version
 ```
 
-Correct output should be:
+Правільны вывад павінен быць:
 ```sh
 valgrind-3.19.0.GIT
 ```
 
-Check with extra information:
+Праверка з дадатковай інфармацыяй:
 ```sh
 /opt/valgrind/bin/valgrind -d -v
 ```
 
-Correct output should be:
+Правільны вывад павінен быць:
 ```sh
 --1667:1:debuglog DebugLog system started by Stage 1, level 1 logging requested
 --1667:1:launcher no tool requested, defaulting to 'memcheck'
@@ -132,26 +133,26 @@ valgrind: no program specified
 valgrind: Use --help for more information.
 ```
 
-## 4. Deploying system libraries with debug information to a controller ##
+## 4. Разгортванне сістэмных бібліятэк з інфармацыяй аб атладцы на кантролеры ##
 
-Copy files from `/opt/pxc/sdk/AXCF2152/2021.0/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi/lib/.debug/` (PC) to `/opt/.debug/` (controller):
+Скапіруйце файлы з  `/opt/pxc/sdk/AXCF2152/2021.0/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi/lib/.debug/` (ПК) на `/opt/.debug/` (кантролер):
 ```sh
 scp -r /opt/pxc/sdk/AXCF2152/2021.0/sysroots/cortexa9t2hf-neon-pxc-linux-gnueabi/lib/.debug/ admin@x.x.x.x:/opt/
 ```
 
-Copy files to `/lib/.debug` (on a controller):
+Скапіруйце файлы на `/lib/.debug` (на кантролеры):
 ```sh
 cp -r /opt/.debug/ /lib/
 ```
 
-## 5. Using **valgrind** (on a controller) ##
+## 5. Выкарыстанне **valgrind** (на кантролеры) ##
 
-Let's check system copy utility **cp**:
+Праверым сістэмную утыліту капіравання **cp**:
 ```sh
 /opt/valgrind/bin/valgrind cp
 ```
 
-Correct output should be:
+Правільны вывад павінен быць:
 ```sh
 ==1975== Memcheck, a memory error detector
 ==1975== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.

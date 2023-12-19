@@ -1,6 +1,6 @@
 # How to cope with abbreviations. #
-
-
+> [!TIP]
+> Беларускі варыянт знаходзіцца [тут](./readmeBY.md). 
 ## List of Commonly Used Abbreviations. ##
 
 **ARP** - Automation Runtime Platform  

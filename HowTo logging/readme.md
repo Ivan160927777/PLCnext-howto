@@ -1,4 +1,6 @@
 # How to logging #
+> [!TIP]
+> Беларускі варыянт знаходзіцца [тут](./readmeBY.md). 
 
 ## 1. **PLCnext** diagnostic log file ##
 
