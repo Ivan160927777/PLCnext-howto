@@ -38,9 +38,9 @@ cmake --build --preset=build-windows-AXCF2152-2021.0.3.35554 --target install
 
 В **ОС Linux** используйте предустановленное имя `build-linux-AXCF2152-2021.0.3.35554`.
 
-## Использование MS Visual Code ##
+## Использование MS Visual Studio Code ##
 
-Откройте каталог `"HowTo build program Hello PLCnext\Hello-PLCnext"` в MS Visual Code.
+Откройте каталог `"HowTo build program Hello PLCnext\Hello-PLCnext"` в MS Visual Studio Code.
 
 Таким образом, вы открыли проект на основе CMake. Установите автоматически предлагаемую конфигурацию и создайте приложение.
 
