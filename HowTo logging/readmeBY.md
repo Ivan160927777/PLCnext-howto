@@ -1,4 +1,6 @@
 # Як весці лог #
+> [!TIP]
+> English version is [here](./readme.md).
 
 ## 1.  Файл логаў дыягностыкі **PLCnext** ##
 
