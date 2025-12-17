@@ -1,4 +1,6 @@
 # How to configure MS Visual Studio Community® to program and crosscompile for the AXC F **x**152 controllers on Windows 10 #
+> [!TIP]
+> Беларускі варыянт знаходзіцца [тут](./readmeBY.md). 
 
 > This HowTo only works for AXC F **x**152 controllers and the AXC F firmware version 2021.9. For other devices or FW versions the instructions could change from version to version.
 
