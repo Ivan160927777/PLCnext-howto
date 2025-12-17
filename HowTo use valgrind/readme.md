@@ -1,5 +1,6 @@
 # How to use **valgrind** #
-
+> [!TIP]
+> Беларускі варыянт знаходзіцца [тут](./readmeBY.md). 
 ## 1. Building **valgrind** (on Linux) ##
 
 > Based on the official [documentation](https://valgrind.org/downloads/repository.html).
