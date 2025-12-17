@@ -1,5 +1,6 @@
 # Quick start **AXC F 2152** and **PLCnext Engineer** #
-
+> [!TIP]
+> Беларускі варыянт знаходзіцца [тут](./readmeBY.md). 
 ## Content ##
 1. [Connecting the controller](#Connecting-the-controller)  
 2. [Updating the controller firmware](#Updating-the-controller-firmware)  
