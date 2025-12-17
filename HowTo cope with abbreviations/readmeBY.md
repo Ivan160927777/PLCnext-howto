@@ -10,5 +10,5 @@
 **ACF** - Automation Component Framework (Структура кампанентаў аўтаматызацыі) \
 **PLM** - Program Library Manager (Менеджэр бібліятэкі праграм) \
 **SM** - Service Manager (Менеджэр па абслугаванню) \
-**AXL** - Axioline \
+**AXL** - Axioline (назва кантролераў ад Phoenix Contact)\
 **RSC service** - Remote Service Call service (Паслуга аддаленага выкліку службы падтрымкі) 
