@@ -1,5 +1,6 @@
 # Як выкарыстоўваць **valgrind** #
-
+> [!TIP]
+> English version is [here](./readme.md).
 ## 1. Зборка **valgrind** (на Linux) ##
 
 > Заснавана на афіцыйнай [дакументацыі](https://valgrind.org/downloads/repository.html).
