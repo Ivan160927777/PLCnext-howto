@@ -4,7 +4,8 @@
 > Основано на официальной [документации](https://github.com/PLCnext/SampleRuntime/blob/master/getting-started/Part-01/README.md).
 
 > [!TIP]
-> English version is [here](./readme.md).
+> English version is [here](./readme.md).\
+> Беларускі варыянт знаходзіцца [тут](./readmeBY.md). 
 
 ## Использование командной строки (чистый **CMake**) ##
 
