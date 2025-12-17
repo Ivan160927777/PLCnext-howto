@@ -4,9 +4,8 @@
 > Заснавана на афіцыйнай [дакументацыі](https://github.com/PLCnext/SampleRuntime/blob/master/getting-started/Part-01/README.md).
 
 > [!TIP]
-> English version is [here](./readme.md).
-
-> Русский вариант находиться [здесь](./readmeRU.md)
+> English version is [here](./readme.md).\
+> Русский вариант находится [здесь](./readmeRU.md).
 
 ## Выкарыстанне каманднага радка (чысты **CMake**) ##
 
